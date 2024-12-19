@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+            color: #4A4A4A;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #FF9A8B, #FF6A88); 
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.8);
+            color: #FF6A88;
+            transform: scale(1.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 40px 0 20px;
+            font-size: 2.5em;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #007BFF;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 20px;
+            font-size: 1.1em;
+            color: #444;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 30px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery {
+            border: 3px solid #555;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.2) saturate(1.2);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid #555;
+        }
+
+        .gallery .desc {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1em;
+            color: #555;
+            background: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #FF9A8B;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Sometimes I just scroll down the gallery, to see you smiling along with me❤️️</div>
+        <div class="menu">
+            <a href="mainpage.html">Home</a>
+        </div>
+    </div>
+
+    <h1>My Gallery:</h1>
+    <p><i>My 'Rahsia Tuhan' is that Allah has blessed me with a loving family and good friends throughout my life. Take a look at the gallery of my collection of photos with them, the ones who have always been there for me in both good and tough times.</i></p>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <a target="_blank" href="ff.png">
+                <img src="ff.png" alt="One n Onleh Boysss">
+            </a>
+            <div class="desc">Me and my friends from Class F. </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="gallery 1.png">
+                <img src="gallery 1.png" alt="UITM Segamat students">
+            </a>
+            <div class="desc">My roommates and ex-roommates,cute right?</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="kroni.png">
+                <img src="kroni.png" alt="Favourite officer">
+            </a>
+            <div class="desc">Our kroni</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="llll.png">
+                <img src="llll.png" alt="SPM kids">
+            </a>
+            <div class="desc">My beloved family. ❤️</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="7.png">
+                <img src="7.png" alt="Sektor Pembangunan Murid">
+            </a>
+            <div class="desc">I got selected to join the PPD parade, eee so exciting! 🎉</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="23.png">
+                <img src="23.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">My friends came to Muar, the most beautiful town in Johor! 🌟</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="25.png">
+                <img src="25.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Came to Melaka just to eat *asam pedas* what smart planning! </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="26.png">
+                <img src="26.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Won against Team Karisma, what a solid team! 💪</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="41.png">
+                <img src="41.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">They’re cosplaying like one of my friends, but who could it be? 🤔</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="44.png">
+                <img src="44.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">The deadly trio! </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="42.png">
+                <img src="42.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Another kid from Class F! </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="34.png">
+                <img src="34.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">minton squad! 🏸</div>
+	   </div>
+
+	<div class="gallery">
+	     <a target="_blank" href="45.png">
+                <img src="45.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">I don't know what meeting this is</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="20.png">
+                <img src="20.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Last photo with my beloved lecturer, Miss Shamira</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="51.png">
+                <img src="51.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Doesn't know how to fight, just knows how to bite its owner's feet. Introducing my cat, "Puteh"</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="411.png">
+                <img src="411.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Ome TV hunter</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="412.png">
+                <img src="412.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Jersey fest on top</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="413.png">
+                <img src="413.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Imut right?</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="b.png">
+                <img src="b.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">The mosque kids  🕌</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="f.png">
+                <img src="f.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Chombi warriors</div>
+        </div> 
+        <div class="gallery">
+            <a target="_blank" href="g.png">
+                <img src="g.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Bathing in the mountain with friends, so funnnn!</div>
+        </div> 
+        <div class="gallery">
+            <a target="_blank" href="h.png">
+                <img src="h.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Chosen to go Allah house. 🙏</div>
+        </div> 
+        <div class="gallery">
+            <a target="_blank" href="j.png">
+                <img src="j.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Selpi with Sir Fuzi</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="last.png">
+                <img src="last.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">5 sem with this classmates,i want you all know that i love u guys so much,forgive me for all my mistakes k🙏❤️</div>
+        </div> 
+        <div class="gallery">
+            <a target="_blank" href="n.png">
+                <img src="n.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">My bestie from Muar to Segamat,luv u adi muah2</div>
+        </div> 
+        <div class="gallery">
+            <a target="_blank" href="p.png">
+                <img src="p.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">My Ustazah in both this world and the hereafter,Homaigodd I miss her so much</div>
+        </div> 
+        <div class="gallery">
+            <a target="_blank" href="s.png">
+                <img src="s.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">Don't be jealous, this person is super comfy and perfect for gomoi2</div>
+        </div> 
+        <div class="gallery">
+            <a target="_blank" href="v.png">
+                <img src="v.png" alt="Last Day Internship">
+            </a>
+            <div class="desc">My mom new house,I’ll never forget this date, 21/10/2024.Al-fatihah</div>
+        </div> 
+        <div class="gallery">
+            <a target="_blank" href="x.png">
+                <img src="x.png" alt="Last Day Internship">
+            </a>
+         <div class="desc">My high school classmates, love you 5 Merbau!</div>
+        </div> 	
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Gallery. All rights reserved.</a></p>
+    </footer>
+</body>
+</html>
