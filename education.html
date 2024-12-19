@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <title>Latar Belakang Pelajaran</title>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Times New Roman;
+            background: linear-gradient(120deg, #A8D08D, #D9E8D2); 
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2E7D32; 
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+ 
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+	}	
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+	}
+
+.navbar a:hover {
+    background: #81C784; 
+    color: black;
+	}
+        
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(20px);
+            animation: slideIn 1s ease-out forwards;
+            flex-grow: 1; 
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #007BFF;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background: #28a745; 
+            color: white;
+            font-size: 1.2em;
+        }
+
+        td {
+            background: #e8f5e9; 
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover td {
+            background: #c8e6c9; 
+            transition: background 0.3s ease;
+        }
+
+        .image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #28a745; 
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 40px;
+            flex-shrink: 0; 
+        }
+
+        .footer p {
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                margin: 10px 0;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Educating the mind without educating the heart⛧</div>
+        <div class="menu">
+            <a href="mainpage.html">Home</a> 
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Primary</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Nama Sekolah</th>
+                    <th>Tahun</th>
+                    <th>My Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images.png" alt="Sekolah Kebangsaan" class="image"></td>
+                    <td>Sekolah Kebangsaan Bakri Batu 5</td>
+                    <td>2011 - 2016</td>
+                    <td>
+                        <img src="sk.png" alt="My Picture" class="image" usemap="#mymap1">
+                        <map name="mymap1">
+                            <area shape="rect" coords="0,0,150,150" href="sk.png" alt="Profile" title="Click for Profile">
+                        </map>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>High School</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Nama Sekolah</th>
+                    <th>Tahun</th>
+                    <th>My Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="smkbp.png" alt="Sekolah Menengah" class="image"></td>
+                    <td>Sekolah Menengah Kebangsaan Bukit Pasir</td>
+                    <td>2017 - 2021</td>
+                    <td>
+                        <img src="smk.png" alt="My Picture" class="image" usemap="#mymap2">
+                        <map name="mymap2">
+                            <area shape="rect" coords="0,0,150,150" href="smk.png" alt="Profile" title="Click for Profile">
+                        </map>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>University</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Nama Universiti</th>
+                    <th>Tahun</th>
+                    <th>My Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="uitm.png" alt="Universiti Teknologi Mara" class="image"></td>
+                    <td>Universiti Teknologi Mara Kampus Segamat</td>
+                    <td>2022 - 2025</td>
+                    <td>
+                        <img src="uni.png" alt="My Picture" class="image" usemap="#mymap3">
+                        <map name="mymap3">
+                            <area shape="rect" coords="0,0,150,150" href="uni.png" alt="Profile" title="Click for Profile">
+                        </map>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 My Education. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
