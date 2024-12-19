@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Times New Roman;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #D2691E;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: #f6d365;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 40px 0 20px;
+            font-size: 2.5em;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #007BFF;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 20px;
+            font-size: 1.1em;
+            color: #444;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 30px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery {
+            border: 3px solid #555;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.2) saturate(1.2);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid #555;
+        }
+
+        .gallery .desc {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.9em;
+            color: #555;
+            background: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .modal-content {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            max-width: 800px;
+            width: 90%;
+            position: relative;
+            overflow: auto;
+            max-height: 80vh;
+        }
+
+        .modal img,
+        .modal video {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .modal .close:hover {
+            color: red;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .gallery img {
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+
+        footer {
+            text-align: center;
+    padding: 8px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+    border-top: 2px solid #f6d365; 
+    position: relative;
+    bottom: 0;
+    width: 100%;       
+ }
+
+        footer a {
+            color: f6d365;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Good Friends Are like Chosen Family ❁</div>
+        <div class="menu">
+            <a href="mainpage.html">Home</a>
+        </div>
+    </div>
+
+    <h1>My Experience:</h1>
+    <p><i>I had the opportunity to do my industrial training at PPD Muar from July 21, 2024, to September 12, 2024. I gained a lot of valuable knowledge and meaningful memories during my internship there. Here are some of the sweetest moments I experienced throughout my time at PPD Muar—let’s take a look!</i></p>
+
+    <div class="gallery-container">
+        <div class="gallery" onclick="openModal(1)">
+            <img src="1.png" alt="Gallery 1">
+            <div class="desc">One n Onleh Boysss</div>
+        </div>
+        <div class="gallery" onclick="openModal(2)">
+            <img src="2.png" alt="Gallery 2">
+            <div class="desc">Take a picture with UITM Segamat students</div>
+        </div>
+        <div class="gallery" onclick="openModal(3)">
+            <img src="3.png" alt="Gallery 3">
+            <div class="desc">One of my favourite officer (Puan Kalsom)</div>
+        </div>
+        <div class="gallery" onclick="openModal(4)">
+            <img src="4 new.png" alt="Gallery 4">
+            <div class="desc">SPM KIDS</div>
+        </div>
+        <div class="gallery" onclick="openModal(5)">
+            <img src="5.png" alt="Gallery 5">
+            <div class="desc">Last Day Internship</div>
+        </div>
+        <div class="gallery" onclick="openModal(6)">
+            <img src="6.png" alt="Gallery 6">
+            <div class="desc">Last Day Internship</div>
+        </div>
+    </div>
+
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(1)">&times;</span>
+            <img src="11(2).png" alt="Gallery 1 Image 1">
+            <img src="11(3).png" alt="Gallery 1 Image 2">
+            <img src="1(4).png" alt="Gallery 1 Image 3">
+            <video controls>
+                <source src="vid 1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(2)">&times;</span>
+            <img src="2(1).png" alt="Gallery 2 Image 1">
+            <img src="2(2).png" alt="Gallery 2 Image 2">
+            <img src="2(3).png" alt="Gallery 2 Image 3">
+            <img src="2(4).png" alt="Gallery 2 Image 4">
+            <video controls>
+                <source src="vid 2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(3)">&times;</span>
+
+            <img src="3(2).png" alt="Gallery 3 Image 2">
+            <img src="3(3).png" alt="Gallery 3 Image 3">
+            <img src="3(4).png" alt="Gallery 3 Image 4">
+            <video controls>
+                <source src="vid 3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(4)">&times;</span>
+            <img src="4(1).png" alt="Gallery 4 Image 1">
+            <img src="4(2).png" alt="Gallery 4 Image 2">
+            <img src="4(3).png" alt="Gallery 4 Image 3">
+            <img src="4(4).png" alt="Gallery 4 Image 4">
+            <video controls>
+                <source src="vid 4(1).mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div id="modal-5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(5)">&times;</span>
+            <img src="5(1).png" alt="Gallery 5 Image 1">
+            <img src="5(2).png" alt="Gallery 5 Image 2">
+            <img src="5(3).png" alt="Gallery 5 Image 3">
+            <video controls>
+                <source src="vid5.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div id="modal-6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(6)">&times;</span>
+            <img src="6(1).png" alt="Gallery 6 Image 1">
+            <img src="6(2).png" alt="Gallery 6 Image 2">
+            <img src="6(3).png" alt="Gallery 6 Image 3">
+            <img src="6(4).png" alt="Gallery 6 Image 4">
+            <img src="6(5).png" alt="Gallery 6 Image 5">
+            <img src="6(6).png" alt="Gallery 6 Image 6">
+            <img src="6(7).png" alt="Gallery 6 Image 7">
+            <img src="6(8).png" alt="Gallery 6 Image 8">
+            <video controls>
+                <source src="vid 6.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(`modal-${id}`).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById(`modal-${id}`).style.display = 'none';
+        }
+    </script>
+<footer>
+    <p style="color: white;">&copy; 2024 My Experience. All rights reserved.</p>
+    <p><a href="_blank" style="color: white;"</a></p>
+</footer>
+
+   </body>
+</html>
