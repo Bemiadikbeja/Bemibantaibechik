@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>My Family</title>
+    <style>
+        body {
+            font-family: Times New Roman;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #cce0ff, #a3c8e1);
+            color: #333;
+        }
+
+        nav {
+            background: linear-gradient(90deg, #6fa3ef, #88d4f8); 
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .family-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .family-member {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeup 1s ease-out;
+        }
+
+        .family-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .family-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #ddd;
+        }
+
+        .family-member h2 {
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #6fa3ef;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .family-member p {
+            margin: 0;
+            color: #666;
+        }
+
+        @keyframes fadeup {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Family is not an important thing. It's everything ღ</div>
+        <ul>
+            <li><a href="mainpage.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>My Family</h1>
+        <div class="family-grid">
+            <div class="family-member">
+                <img src="father.png" alt="Father" usemap="#father-map">
+                <h2>Father</h2>
+                <p>My dad is strict and stern, but since he retired from the military, he has become less fierce. He also often cheers us up with his jokes. Back then, he and my mom would go out often because their children were rarely home, but now he feels lonely and only has his kids around. It's okay, Adik,Ayong ngan Abang will try to brighten your day so you won't feel bored.</p>
+<map name="father-map">
+                    <area shape="rect" coords="0,0,100,100" href="father.png" alt="Father">
+                </map>
+            </div>
+            
+            <div class="family-member">
+                <img src="mother.png" alt="Mother" usemap="#mother-map">
+                <h2>Mother</h2>
+                <p>My mom is kind and beautiful. She is my angel in both this world and the hereafter. I don’t want to say more, but Allah knows that me, my brother, and my sister love and miss her so much. Mom, don’t worry, we siblings will try our best to take care of Dad, just like we take care of you. We love you so much. Al-Fatihah.</p>
+<map name="mother-map">
+                    <area shape="rect" coords="0,0,100,100" href="mother.png" alt="Mother">
+                </map>
+            </div>
+
+            <div class="family-member">
+                <img src="sister.png" alt="Sister" usemap="#sister-map">
+                <h2>Sister</h2>
+                <p>My sister is very generous and never stingy with her siblings. She is truly my bank, without her, I might not even be eating right now. I love her so much, especially when she gets paid, that’s the happiest day for me. I hope my sister will continue to be my bank, even after she gets married.</p>
+<map name="sister-map">
+                    <area shape="rect" coords="0,0,100,100" href="sister.png" alt="Sister">
+                </map>
+            </div>
+
+            <div class="family-member">
+                <img src="brother.png" alt="Brother" usemap="#brother-map">
+                <h2>Brother</h2>
+                <p>My brother is a hard worker. He is also like my bank, though I'm a bit scared to ask him because he’s strict. I hope my brother can achieve his dreams, and I miss him a lot because he’s currently doing a 10-month maritime training. I don't have anyone to argue with right now, but it's okay, I hope he will succeed one day.</p>
+<map name="brother-map">
+                    <area shape="rect" coords="0,0,100,100" href="brother.png" alt="Brother">
+                </map>
+            </div>
+
+            <div class="family-member">
+                <img src="me.png" alt="Me" usemap="#me-map">
+                <h2>Me</h2>
+                <p>As for myself? No need for a description, I'm the cutest and most handsome. Without me, my family and friends would probably feel very bored because I’m the kindest, polite, and mindful of my words. I hope there will be more people like me so that we can all live in a non-toxic and peaceful world.</p>
+<map name="me-map">
+                    <area shape="rect" coords="0,0,100,100" href="me.png" alt="Me">
+                </map>
+            </div>
+        </div>
+    </div>
+<footer>
+    <p>&copy; 2024 My Family. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
